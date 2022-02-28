@@ -2,6 +2,7 @@
 
 #include <memory>
 namespace factory {
+namespace simple_factory {
 void Sub1::func() { cout << "Sub1 func" << endl; }
 void Sub2::func() { cout << "Sub2 func" << endl; }
 
@@ -11,4 +12,5 @@ unique_ptr<Base> SimpleFactory::run_func(int i) {
   }
   return std::make_unique<Sub2>();
 }
+} // namespace simple_factory
 } // namespace factory

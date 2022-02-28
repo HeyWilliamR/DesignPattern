@@ -4,10 +4,11 @@
 #include <memory>
 using namespace std;
 namespace factory {
+namespace simple_factory {
 class Base {
 public:
   Base() = default;
-  virtual ~Base() =default;
+  virtual ~Base() = default;
   virtual void func() = 0;
 };
 
@@ -30,6 +31,7 @@ public:
   // 所以当使用返回值为对象是会报编译错误。
   static unique_ptr<Base> run_func(int i);
 };
+} // namespace simple_factory
 } // namespace factory
 
 #endif // DESIGNPATTERN_SIMPLE_FACTORY_H
