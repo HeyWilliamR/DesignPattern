@@ -11,11 +11,14 @@ aux_source_directory(. DESIGN_PATTERN)
 # 添加 creational_pattern 子目录
 add_subdirectory(./creational_pattern/)
 
-# 添加 creational_pattern 子目录
+# 添加 behavioral_pattern 子目录
 add_subdirectory(./behavioral_pattern/)
+
+# 添加 behavioral_pattern 子目录
+add_subdirectory(./structural_pattern/)
 
 # 指定生成目标
 add_executable(DESIGN_PATTERN main.cc)
 
 # 添加链接库
-target_link_libraries(DESIGN_PATTERN CREATIONAL_PATTERN BEHAVIORAL_PATTERN)
+target_link_libraries(DESIGN_PATTERN CREATIONAL_PATTERN BEHAVIORAL_PATTERN STRUCTURAL_PATTERN)
