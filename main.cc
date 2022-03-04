@@ -3,6 +3,7 @@
 #include "creational_pattern/factory/abstract_factory/abstract_factory.h"
 #include "creational_pattern/factory/factory_method/factory_method.h"
 #include "structural_pattern/decorator.h"
+#include "structural_pattern/proxy.h"
 #include <memory>
 #include <vector>
 using namespace factory;
@@ -65,7 +66,14 @@ void test_decorator() {
   compress_encry_file->ReadData("123");
 }
 
+void test_proxy() {
+  auto proxy =
+      make_unique<structure::Proxy>(std::make_shared<structure::RealObject>());
+  proxy->operator1();
+  proxy->operator2();
+}
+
 int main() {
-  test_decorator();
+  test_proxy();
   return 1;
 }
