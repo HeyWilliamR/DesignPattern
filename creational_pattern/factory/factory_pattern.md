@@ -2,7 +2,7 @@
 
 ## 简单工厂模式
 
-![simple_factory](C:\Users\seara\Downloads\simple_factory.png)
+![simple_factory](.\..\..\pictures\simple_factory.png)
 
 
 
@@ -14,7 +14,7 @@ Factory内部函数通过switch或者是if语句来创建不同的Base子类对�
 
 ## 工厂方法模式
 
-![factory_method](C:\Users\seara\Downloads\factory_method.jpg)
+![factory_method](.\..\..\pictures\factory_method.jpg)
 
  当你在编写代码的过程中， 如果无法预知对象确切类别及其依赖关系时， 可使用工厂方法。
 
@@ -71,7 +71,7 @@ Factory内部函数通过switch或者是if语句来创建不同的Base子类对�
 
 ## 抽象工厂模式
 
-![abstract_factory](C:\Users\seara\Downloads\abstract_factory.jpg)
+![abstract_factory](..\..\pictures\abstract_factory.jpg)
 
 **抽象工厂模式**是一种创建型设计模式， 它能创建一系列相关的对象， 而无需指定其具体类。
 
