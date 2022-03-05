@@ -4,6 +4,7 @@
 #include "creational_pattern/factory/factory_method/factory_method.h"
 #include "structural_pattern/decorator.h"
 #include "structural_pattern/proxy.h"
+#include "behavioral_pattern/template.h"
 #include <memory>
 #include <vector>
 using namespace factory;
@@ -73,7 +74,12 @@ void test_proxy() {
   proxy->operator2();
 }
 
+void test_template()
+{
+  auto test = template_pattern::ConcentrateMethod();
+  test.Method();
+}
 int main() {
-  test_proxy();
+  test_template();
   return 1;
 }
