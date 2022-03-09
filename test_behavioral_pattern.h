@@ -1,0 +1,6 @@
+#ifndef DESIGNPATTERN__TEST_BEHAVIORAL_PATTERN_H_
+#define DESIGNPATTERN__TEST_BEHAVIORAL_PATTERN_H_
+
+void test_strategy_pattern();
+void test_template();
+#endif // DESIGNPATTERN__TEST_BEHAVIORAL_PATTERN_H_

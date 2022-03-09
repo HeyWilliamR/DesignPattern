@@ -18,7 +18,8 @@ add_subdirectory(./behavioral_pattern/)
 add_subdirectory(./structural_pattern/)
 
 # 指定生成目标
-add_executable(DESIGN_PATTERN main.cc)
+aux_source_directory(. DIR_SRCS)
+add_executable(DESIGN_PATTERN ${DIR_SRCS})
 
 # 添加链接库
 target_link_libraries(DESIGN_PATTERN CREATIONAL_PATTERN BEHAVIORAL_PATTERN STRUCTURAL_PATTERN)
